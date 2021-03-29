@@ -27,7 +27,7 @@ class SidebarMainNavbar extends React.Component {
         >
           <NavbarBrand
             className="w-100 mr-0"
-            href="#"
+            href="/courses"
             style={{ lineHeight: "25px" }}
           >
             <div className="d-table m-auto">
@@ -35,12 +35,12 @@ class SidebarMainNavbar extends React.Component {
                 id="main-logo"
                 className="d-inline-block align-top mr-1"
                 style={{ maxWidth: "25px" }}
-                src={require("../../../images/shards-dashboards-logo.svg")}
-                alt="Shards Dashboard"
+                src={require("../../../images/logo.png")}
+                alt="EngagED Dashboard"
               />
               {!hideLogoText && (
                 <span className="d-none d-md-inline ml-1">
-                  Shards Dashboard
+                Fullstack Challenge
                 </span>
               )}
             </div>
@@ -59,9 +59,6 @@ class SidebarMainNavbar extends React.Component {
 }
 
 SidebarMainNavbar.propTypes = {
-  /**
-   * Whether to hide the logo text, or not.
-   */
   hideLogoText: PropTypes.bool
 };
 
